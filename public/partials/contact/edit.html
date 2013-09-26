@@ -1,0 +1,70 @@
+<form>
+   <section class="border-bottom">
+         <div class="content">
+          <h3>First Name</h3>
+          <div class="form-control-group">
+           <div class="form-control form-control-text">
+            <input type="text" name="text" ng-model="contact.FirstName">
+           </div>
+          </div>
+         </div>
+    </section>
+
+   <section class="border-bottom">
+         <div class="content">
+          <h3>Last Name</h3>
+          <div class="form-control-group">
+           <div class="form-control form-control-text">
+            <input type="text" name="text" ng-model="contact.LastName">
+           </div>
+          </div>
+         </div>
+    </section>
+
+
+   <section class="border-bottom">
+         <div class="content">
+          <h3>Title</h3>
+          <div class="form-control-group">
+           <div class="form-control form-control-text">
+            <input type="text" name="text" ng-model="contact.Title">
+           </div>
+          </div>
+         </div>
+    </section>
+
+
+   <section class="border-bottom">
+         <div class="content">
+          <h3>Email</h3>
+          <div class="form-control-group">
+           <div class="form-control form-control-text">
+            <input type="text" name="text" ng-model="contact.Email">
+           </div>
+          </div>
+         </div>
+    </section>
+
+
+   <section class="border-bottom">
+         <div class="content">
+          <h3>Phone</h3>
+          <div class="form-control-group">
+           <div class="form-control form-control-text">
+            <input type="text" name="text" ng-model="contact.Phone">
+           </div>
+          </div>
+         </div>
+    </section>
+
+    <input disabled="disabled" type="hidden" name="Id" ng-model="contact.Id" />
+
+        <div class="toolbar" style="margin-left:20%">
+            <button class='toolbar_button' ng-click="save()">Save</button> 
+            <button class='toolbar_button' ng-click="destroy()">Delete</button>
+            <button class='toolbar_button' ng-click="doCancel()" >Cancel</button>
+        </div>
+
+
+
+</form>

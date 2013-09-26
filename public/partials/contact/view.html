@@ -1,0 +1,25 @@
+<div style='margin:5px;'>
+	<div style='height:200px'>
+	<h2>
+		{{contact.FirstName}} {{contact.LastName}}
+	</h2>
+	<h3>
+		{{contact.Title}}
+	</h3>
+	<p ng-show="contact.Account.Name">
+		<strong>Account:</strong> {{contact.Account.Name}}
+	</p>
+	<p>
+		<strong>Email:</strong> <a href="mailto:{{contact.Email}}">{{contact.Email}}</a>
+	</p>
+	<p>
+		<strong>Phone:</strong> <a href="tel:{{contact.Phone}}">{{contact.Phone}}</a>
+	</p>
+</div>
+	<section class="data-capture-buttons two-buttons">
+		<div class="content">
+			<a href="#/edit/{{contact.Id}}" style='float:left'>Edit</a> 
+			<a href="#/contacts" style='float:left'>Back</a>
+		</div>
+	</section>
+</div>

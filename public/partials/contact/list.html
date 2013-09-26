@@ -1,0 +1,21 @@
+    <form class='toolbar'>
+        <input class='toolbar_field' style='width:60%' ng-model="searchTerm" placeholder='Enter Email..' type="text" name="Email" value="email address"> 
+        <button class='toolbar_button' ng-blur='blurSearchField' ng-click="doSearch(searchString)">Search</button> 
+        <button class='toolbar_button' ng-click="doCreate()">&nbsp;+&nbsp;</button>
+    </form>
+    <ul class="list-view right-one-icons">
+        <!-- for top line of the list-->
+        <li></li>
+
+        <li ng-repeat="contact in contacts" class="repeat-item">
+            <h1>
+                <a ng-click="doView(contact.Id)" class="content">{{contact.FirstName}} {{contact.LastName}}</a>
+            </h1>
+            <p>
+                <a ng-click="doView(contact.Id)" class="content"><small><i>{{contact.Account.Name}}</i></small></a>
+            </p>
+            <div class="list-view-icons">
+                <span class="icon-right-arrow">&nbsp;</span>
+            </div>
+        </li>
+    </ul>

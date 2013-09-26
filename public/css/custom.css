@@ -1,0 +1,37 @@
+
+.button {
+  text-align: center;
+}
+.toolbar {
+  height:45px;
+  width:100%;
+}
+
+.toolbar_field {
+  float:left;
+  margin-top: 5px;
+  margin-left:5px;
+  border: solid 1px #78a5ad;
+  height: 35px;
+  font-size: 15px;
+  color: #78a5ad;
+  padding-left: 5px;
+  vertical-align: bottom
+}
+.small_width {
+  width:25%;
+}
+.medium_width {
+  width:50%;
+}
+
+.toolbar_button {
+  float:left;
+  margin-top: 5px;
+  border: solid 1px #78a5ad;
+  height: 35px;
+
+  color: white;
+  background-color: #78a5ad;
+  border-radius: 15px;
+}
